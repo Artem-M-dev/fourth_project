@@ -1,1 +1,1 @@
-*{font-size:50px}
+figure,h1,h2,h3,h4,h5,ol,p,ul{margin:0}ol[role=list],ul[role=list]{list-style:none;padding-inline:0}h1,h2,h3,h4,h5{font-size:inherit;font-weight:inherit}img{display:block;max-inline-size:100%}html{font-family:MuseoModerno,sans-serif}.title-h1{color:#000;margin-top:100px;background-color:#0f0;padding:10px}
