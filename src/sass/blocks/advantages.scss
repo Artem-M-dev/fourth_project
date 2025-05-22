@@ -1,0 +1,48 @@
+@use "../base/variables.scss" as *;
+
+.advantages {
+    padding: 70px 0 65px 0;
+    background-color: #f6f6f6;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    &__info {
+        width: calc((100% - 112px) / 3)
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        margin-top: 35px;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        span {
+            color: red;
+            text-decoration: underline;
+        }
+    }
+}
