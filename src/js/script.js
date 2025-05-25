@@ -40,4 +40,64 @@ $(document).ready(function () {
   };
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+  // Modal
+
+  $('[data-modals=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+  })
+
+  $('.button__buy').on('click', function () {
+    $('.overlay, #order').fadeIn('slow');
+  })
+
+  // $('#consultation-form').validate();
+  // $('#consultation form').validate({
+  //   rules: {
+  //     name: "required",
+  //     phone: "required",
+  //     email: {
+  //       required: true,
+  //       email: true,
+  //     }
+  //   },
+  //   messages: {
+  //     name: "Пожалуйста, введите свое имя!",
+  //     phone: "Пожалуйста, введите свой номер телефона!",
+  //     email: {
+  //       required: "Пожалуйста, введите свою почту!",
+  //       email: "Неправильный адрес почты!"
+  //     }
+  //   }
+  // });
+  // $('#order form').validate();
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите свое имя!",
+        phone: "Пожалуйста, введите свой номер телефона!",
+        email: {
+          required: "Пожалуйста, введите свою почту!",
+          email: "Неправильный адрес почты!"
+        }
+      }
+    });
+  };
+
+  validateForms('#consultation-form');
+  validateForms('#consultation form');
+  validateForms('#order form');
 });

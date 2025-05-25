@@ -28,7 +28,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modals="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
 
@@ -52,7 +52,7 @@
                         Ответим <br> на все вопросы
                     </div>
                 </div>
-                <button class="button button_main promo__btn">заказать консультацию</button>
+                <button data-modals="consultation" class="button button_main promo__btn">заказать консультацию</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -94,10 +94,10 @@
             <h2 class="consultation__title">Получите бесплатную консультацию <br> по подбору пульсометра </h2>
             <div class="consultation__descr">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
-                <input name="name" placeholder="Ваше имя" type="text" required>
-                <input name="phone" placeholder="Ваш телефон" type="tel" required>
-                <input name="email" placeholder="Ваш E-mail" type="email" required>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
@@ -539,6 +539,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
